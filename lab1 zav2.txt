@@ -1,0 +1,5 @@
+alter table book add author varchar(20);
+alter table book modify column author varchar(25);
+alter table book drop column author;
+create unique index title_idx on book(name_book desc);
+alter table book drop index title_idx
